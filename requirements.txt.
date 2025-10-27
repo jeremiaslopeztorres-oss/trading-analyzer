@@ -1,6 +1,6 @@
 streamlit
 numpy
-opencv-python-headless
+opencv-python
 pillow
 matplotlib
 pandas
