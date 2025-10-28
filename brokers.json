@@ -1,0 +1,66 @@
+{
+  "Puerto Rico": [
+    {
+      "nombre": "OANDA",
+      "paypal": "No",
+      "plataformas": "TradingView, MT5",
+      "deposito": "$0",
+      "comisiones": "Desde 0.6 pips",
+      "link": "https://www.oanda.com"
+    },
+    {
+      "nombre": "Pepperstone",
+      "paypal": "Sí",
+      "plataformas": "MT5, TradingView",
+      "deposito": "$0",
+      "comisiones": "Desde 0.0 pips + comisión",
+      "link": "https://www.pepperstone.com"
+    }
+  ],
+  "México": [
+    {
+      "nombre": "XM",
+      "paypal": "Sí",
+      "plataformas": "MT4, MT5",
+      "deposito": "$5",
+      "comisiones": "Desde 1.0 pips",
+      "link": "https://www.xm.com"
+    },
+    {
+      "nombre": "XTB",
+      "paypal": "Sí",
+      "plataformas": "xStation, TradingView",
+      "deposito": "$0",
+      "comisiones": "Desde 0.5 pips",
+      "link": "https://www.xtb.com"
+    }
+  ],
+  "España": [
+    {
+      "nombre": "XTB",
+      "paypal": "Sí",
+      "plataformas": "xStation, TradingView",
+      "deposito": "$0",
+      "comisiones": "Desde 0.5 pips",
+      "link": "https://www.xtb.com"
+    },
+    {
+      "nombre": "Pepperstone",
+      "paypal": "Sí",
+      "plataformas": "MT5, TradingView",
+      "deposito": "$0",
+      "comisiones": "Desde 0.0 pips + comisión",
+      "link": "https://www.pepperstone.com"
+    }
+  ],
+  "Colombia": [
+    {
+      "nombre": "XTB",
+      "paypal": "Sí",
+      "plataformas": "xStation",
+      "deposito": "$0",
+      "comisiones": "Desde 0.5 pips",
+      "link": "https://www.xtb.com"
+    }
+  ]
+}
