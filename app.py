@@ -173,3 +173,34 @@ else:
         st.write(f"Riesgo sugerido: **{rec['risk_pct']:.2f}%**")
         st.write(f"Cantidad que arriesgas aprox: **${invest_amount * (rec['risk_pct']/100.0):.2f}**")
         st.markdown("> ⚠️ Estimación visual. Valida con datos reales antes de operar.")
+
+
+# ---------------------------
+# NUEVA SECCIÓN: Brokers por país
+# ---------------------------
+
+import json
+import streamlit as st
+
+st.header("🌍 Encuentra tu Broker Ideal")
+st.write("Selecciona tu país para ver los brokers disponibles, sus métodos de pago y plataformas.")
+
+with open("brokers.json", "r", encoding="utf-8") as f:
+    brokers = json.load(f)
+
+pais = st.selectbox("Selecciona tu país:", [""] + list(brokers.keys()))
+
+if pais:
+    st.subheader(f"Brokers disponibles en {pais}")
+    for b in brokers[pais]:
+        st.markdown(f"""
+        ### {b['nombre']}
+        - 💵 **Depósito mínimo:** {b['deposito']}
+        - 📊 **Plataformas:** {b['plataformas']}
+        - 🪙 **Acepta PayPal:** {b['paypal']}
+        - 📈 **Comisiones:** {b['comisiones']}
+        - 🔗 [Ir al broker]({b['link']})
+        ---
+        """)
+else:
+    st.info("Selecciona un país para ver las opciones disponibles.")
